@@ -9,19 +9,19 @@
         <div class="container" >
             <div class="header">
                 <div class="head-1">
-                    <h1>Header logo</h2>
+                    <a href="./flex-image.png"> </a>
                     
                     <div class="links">
-                        <p>About<p>
-                        <p>Contact us<p>
-                        <p>More<p>
+                        <a href="./index.html">About </a>
+                        <a href="./index.html">Contact us </a>
+                        <a href="./index.html">More </a>
                         </div>
 
                 </div>
 
                 <div class="head-2">
-                    <h1>This website is awesome<h3>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit aliquet enim. Nunc finibus nec tellus at tincidunt. Nunc ac lorem eget diam suscipit auctor. Nam id tortor quis purus laoreet posuere. Nam id mauris nisi. Mauris id pretium ante, ac placerat ante.</h3>
+                    <h1 class="htext-1">This website is mine<h3>
+                    <h3 class="htext-2">This website has some subtext that goes under the main title. It's a smaller font and the color is lower contrast</h3>
                 </div>
 
             </div>
@@ -58,12 +58,18 @@
     .head-1, .links {
         flex-direction: row;
         margin: 0px;
-        margin-left: 80px;
-        padding: 10px;  
-        padding-bottom: 150px;
+        margin-left: 5%;
+        padding: 10px;
        
         
 
+    }
+
+    .htext-1 {
+        color: rgb(228, 226, 222);
+        font-size: 48px;
+        font-weight: bolder;
+        
     }
 
     .links {
@@ -75,11 +81,25 @@
     .head-2 {
         flex-direction: column;
         margin-right: 800px;
+        text-align: left;
+        padding-left: 5%;
+        padding-bottom: 150px;
         
         
 
     }
 
-   
+    a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: grey;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
 
 </style>
