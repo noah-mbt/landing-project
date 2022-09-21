@@ -10,16 +10,19 @@
             <div class="header">
                 <div class="head-1">
                     <h1>Header logo</h2>
-                    <p>About<p>
-                    <p>contact us<p>
-                    <p>header link 3<p>
+                    
+                    <div class="links">
+                        <p>About<p>
+                        <p>Contact us<p>
+                        <p>More<p>
+                        </div>
 
-                    <h1>This website is awessome<h3>
+                </div>
+
+                <div class="head-2">
+                    <h1>This website is awesome<h3>
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit aliquet enim. Nunc finibus nec tellus at tincidunt. Nunc ac lorem eget diam suscipit auctor. Nam id tortor quis purus laoreet posuere. Nam id mauris nisi. Mauris id pretium ante, ac placerat ante.</h3>
                 </div>
-            </div>
-            
-            <div class="page-header">
 
             </div>
 
@@ -29,42 +32,54 @@
 
 <style>
 
-    body {
+    body, .head-1, .links {
+        display: flex;
+        flex-direction: column;
         padding: 0;
         margin: 0;
         font-family: 'Roboto', Arial;
+        text-align: center;
     }
 
     .container {
-        font-family: 'Roboto', Arial;
+        
         
         
 
-        }
+    }
 
     .header {
-        display: flex;
-        justify-content: ;
-        margin: 0px;
         color:white;
-
         background-color: #1f2937;
-
-        }
-
-    .page-header {
-
-    }
-
-    h2 {
-        display: inline
         
-    }
-
-    h3 {
-        display: inline;
-        text-align: right;
 
     }
+
+    .head-1, .links {
+        flex-direction: row;
+        margin: 0px;
+        margin-left: 80px;
+        padding: 10px;  
+        padding-bottom: 150px;
+       
+        
+
+    }
+
+    .links {
+        margin-left: 800px;
+        gap: 20px;  
+
+    }
+
+    .head-2 {
+        flex-direction: column;
+        margin-right: 800px;
+        
+        
+
+    }
+
+   
 
 </style>
