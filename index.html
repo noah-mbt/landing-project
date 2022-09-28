@@ -2,11 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Project</title>
     </head>
 
     <body>
         <div class="container" >
+
+            <!-- header text and content -->
             <div class="header">
                 <div class="head-1">
                     <a href="./flex-image.png"> </a>
@@ -26,9 +29,15 @@
                 </div>  
             </div>
 
+            <!-- hero text and content -->
             <div class="hero">
                 <p>Some random information.</p>
-                
+                <div class="images">
+                    <img src="./images/pexels-ahmed-muntasir-912050.jpg" />
+                    <img src="./images/pexels-inge-wallumrød-126628.jpg" />
+                    <img src="./images/pexels-brett-sayles-3140204.jpg" />
+                    <img src="./images/pexels-pixabay-372797.jpg" />
+                </div>
 
             </div>
 
@@ -47,8 +56,7 @@
         text-align: center;
     }
 
-    .container {
-
+    .container {    
     }
 
     .header {
@@ -70,10 +78,11 @@
         color: rgb(228, 226, 222);
         font-size: 48px;
         font-weight: bolder;
+        margin-bottom: 0px;
         
     }
 
-    h3 {
+    .htext-2 {
         color: rgb(193, 192, 192);
         font-size: 16px;
     }
@@ -92,12 +101,12 @@
         padding-left: 10%;
         padding-bottom: 8%;
         padding-top: 6%;
- 
+
     }
 
 
     button {
-        background-color: rgb(0, 128, 255);
+        background-color: rgb(23, 122, 222);
         color:rgb(247, 246, 246);
         border-radius: 8px;
         text-align: center;
@@ -110,10 +119,32 @@
         font-size: 18px;
     } 
 
+    .hero {   
+        
+        
+    }
+
     p {
         margin: 4%;
-        font-size: 42px;
+        font-size: 34px;
         font-weight: bolder;
+        word-spacing: 0px;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+        margin: 10px;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+        border-radius: 15px;
+
     }
 
     a:link {
