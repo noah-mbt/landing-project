@@ -1,3 +1,5 @@
+<!-- boilerplate -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,34 +13,63 @@
 
             <!-- header text and content -->
             <div class="header">
-                <div class="head-1">
-                    <a href="./flex-image.png"> </a>
-                    
+
+                <!-- contact information and more -->
+                <div class="head-links">
                     <div class="links">
                         <a href="./index.html">About </a>
                         <a href="./index.html">Contact us </a>
                         <a href="./index.html">More </a>
                         </div>
-
                 </div>
+                
+                <!-- header text, sub-text and sign-up button -->
+                <div class="head-1">
+                    <div class="hleft">
+                        <h1 class="htext-1">This website is awesome</h1>
+                        <h3 class="htext-2">This website has some subtext that goes under the main title. It's a smaller font and the color is lower contrast</h3>
+                        <button class="button1">Sign up </button>
+                    </div>
 
-                <div class="head-2">
-                    <h1 class="htext-1">This website is awesome</h1>
-                    <h3 class="htext-2">This website has some subtext that goes under the main title. It's a smaller font and the color is lower contrast</h3>
-                    <button>Sign up </button>
-                </div>  
+                    <!-- header image -->
+                    <div class="hright">
+                        <img id="head-image" src="./images/pexels-vinícius-estevão-5241616.jpg" />
+                    </div>
+                </div>
+                  
             </div>
 
             <!-- hero text and content -->
             <div class="hero">
-                <p>Some random information.</p>
-                <div class="images">
-                    <img src="./images/pexels-ahmed-muntasir-912050.jpg" />
-                    <img src="./images/pexels-inge-wallumrød-126628.jpg" />
+                <p class="hero-text">Some random information.</p>
+                <div class="hero-images">
                     <img src="./images/pexels-brett-sayles-3140204.jpg" />
+                    <img src="./images/pexels-ahmed-muntasir-912050.jpg" />  
+                    <img src="./images/pexels-inge-wallumrød-126628.jpg" />
                     <img src="./images/pexels-pixabay-372797.jpg" />
                 </div>
+            </div>
 
+            <!-- quote section, text and content -->
+            <div class="quote">
+                <p class="quote-text">"Aviation is proof that given the will, we have the capacity to achieve the impossible.” </p>
+                <p class="quote-author">-Eddie Rickenbacker</p>
+            </div>
+
+            <!-- sign-up text and button -->
+            <div class="sign-up">
+                <div class="suleft">
+                    <p class="su-text1">Call to action! It's time!</p>
+                    <p class="su-text2">Sign up for our product by clicking that button right over there!</p>
+                </div>
+
+                <div class="suright">
+                    <button class="button2">Sign up</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <footer>Copyright © The Odin Project 2021</footer>
             </div>
 
         </div>
@@ -66,7 +97,7 @@
 
     }
 
-    .head-1, .links {
+    .head-links, .links {
         flex-direction: row;
         margin: 0px;
         margin-left: 5%;
@@ -74,39 +105,36 @@
 
     }
 
+    .head-1 {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        padding: 6% 0 10% 0%
+
+    }
+
     .htext-1 {
         color: rgb(228, 226, 222);
-        font-size: 48px;
+        font-size: 60px;
         font-weight: bolder;
-        margin-bottom: 0px;
         
     }
 
     .htext-2 {
         color: rgb(193, 192, 192);
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .links {
-        margin-left: 900px;
-        gap: 20px;  
-        font-family: ;
+        margin-left: 75%;
+        gap: 20px; 
+        font-size: 20px;
 
     }
-
-    .head-2 {
-        flex-direction: column;
-        margin-right: 60%;
-        text-align: left;
-        padding-left: 10%;
-        padding-bottom: 8%;
-        padding-top: 6%;
-
-    }
-
 
     button {
-        background-color: rgb(23, 122, 222);
+        background-color: #3882f6;
         color:rgb(247, 246, 246);
         border-radius: 8px;
         text-align: center;
@@ -119,33 +147,108 @@
         font-size: 18px;
     } 
 
-    .hero {   
+    .hleft {
+
+        max-width: 800px;
+        height: 350px;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+
+    .hright {
         
+
+    }
+
+    .hright img {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+
+    .hero {   
         
     }
 
-    p {
+    .hero-text {
         margin: 4%;
         font-size: 34px;
         font-weight: bolder;
         word-spacing: 0px;
     }
 
-    .images {
+    .hero-images {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        gap: 16px;
+        justify-content: center;
+        gap: 20px;
         margin: 10px;
+        margin-bottom: 110px;
     }
 
-    .images img {
+    .hero-images img {
         width: 100%;
-        max-width: 300px;
-        height: 250px;
-        border-radius: 15px;
+        max-width: 350px;
+        height: 350px;
+        border-radius: 14px;
+        object-fit: cover;
 
     }
+
+    .quote {
+        background-color: #e5e7eb;
+        padding: 100px; 
+    }
+
+    .quote-text {
+        font-size: 36px;
+        font-style: italic;
+        color: #1f2937;
+    }
+
+    .quote-author {
+        margin-left: 60%;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+    .sign-up {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        margin: 100px 10% 100px 10%;
+        padding: 30px 0 30px 5%;
+        background-color: #3882f6;
+        color:rgb(247, 246, 246);
+        border-radius: 10px;
+    }
+
+    .su-text1 {
+        font-weight: bolder;
+        font-size: 36px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .su-text2 {
+        font-size: 24px;
+        color: rgb(193, 192, 192);
+    }
+
+    .button2 {
+        border: 10px;
+    }
+
+    .footer {
+        background-color: #1f2937;
+        font-size: 20px;
+        color: rgb(193, 192, 192);
+        padding: 50px 0 50px 0;
+    }
+
 
     a:link {
         color: white;
