@@ -1,15 +1,18 @@
 body, .head-content, .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
+.container {    
+}
 
 .header {
     background-color: #1f2937;
+    padding-bottom: 60px;
 }
 
 .head-links, .links {
@@ -29,15 +32,15 @@ body, .head-content, .links {
 }
 
 .htext-1 {
-    color: rgb(228, 226, 222);
-    font-size: 65px;
+    color: rgb(240, 240, 240);
+    font-size: 60px;
     font-weight: bolder;
     
 }
 
 .htext-2 {
-    color: rgb(193, 192, 192);
-    font-size: 35px;
+    color: rgb(225, 225, 225);
+    font-size: 30px;
     font-family: 'Roboto', Arial;
 
 }
@@ -52,16 +55,16 @@ body, .head-content, .links {
 button {
     background-color: #3882f6;
     color:rgb(247, 246, 246);
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 10px;
     width: 150px;
     font-weight: bolder;
     border: none;
     font-size: 18px;
-} 
+}
 
-.button1 {
-    
+.button2 {
+    justify-content: center;
 }
 
 .hleft {
@@ -85,6 +88,9 @@ button {
     margin: 20px;
 }
 
+.hero {   
+    
+}
 
 .hero-text {
     margin: 4%;
@@ -124,10 +130,10 @@ button {
 }
 
 .quote-author {
-    margin-left: 75%;
-    padding-top: 4px;
-    font-size: 28px;
+    margin-left: 70%;
+    padding-top: 2%;
     font-style: italic;
+    font-size: 28px;
     font-weight: bolder;
 }
 
@@ -140,7 +146,7 @@ button {
     padding: 30px 0 30px 5%;
     background-color: #3882f6;
     color:rgb(247, 246, 246);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .su-text1 {
@@ -152,11 +158,11 @@ button {
 
 .su-text2 {
     font-size: 20px;
-    color: rgb(243, 243, 243);
+    color: rgb(193, 192, 192);
 }
 
 .button2 {
-    border: 2px solid rgba(255, 255, 255, 0.925);
+    border: 2px solid white;
     width: 170px;
     height: auto;
 }
